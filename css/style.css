@@ -339,8 +339,8 @@ footer {
 .icon {
   width: 20px;
   height: 20px;
-  fill: var(--superlightgrey-color);
 }
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -357,6 +357,7 @@ footer {
   align-items: center;
   width: 44px;
   height: 44px;
+  color: var(--superlightgrey-color);
 }
 .social-link:hover,
 .social-link:focus {
@@ -365,9 +366,8 @@ footer {
   color: var(--white-color);
 }
 
-.icon:hover,
-.icon:focus {
-  fill: var(--white-color);
+.icon {
+  fill: currentColor;
 }
 
 .clients-section {
