@@ -5,6 +5,10 @@
   --grey-color: #757575;
   --dark-color: #2f303a;
   --background-color: #e5e5e5;
+  --secondbackground-color: #f5f4fa;
+  --lightgrey-color: #afb1b8;
+  --beige-color: #f5f4fa;
+  --superlightgrey-color: #c4c4c4;
 }
 
 header {
@@ -45,6 +49,12 @@ header {
   line-height: 1.14;
   text-decoration: none;
   font-style: normal;
+  display: inline-block;
+}
+
+.link-address:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .banner {
@@ -170,7 +180,7 @@ img {
 }
 
 .team-section {
-  background-color: var(--background-color);
+  background-color: var(--secondbackground-color);
   padding-bottom: 92px;
   padding-top: 92px;
 }
@@ -310,8 +320,6 @@ footer {
 .icon-envelope {
   display: inline-block;
   margin-right: 10px;
-  background-size: contain;
-  background-position: center;
   fill: currentColor;
 }
 .features {
@@ -326,16 +334,16 @@ footer {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
+  background-color: var(--beige-color);
 }
 .icon {
   width: 20px;
   height: 20px;
-  fill: #c4c4c4;
+  fill: var(--superlightgrey-color);
 }
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 30px;
@@ -354,7 +362,9 @@ footer {
 .social-link:focus {
   border-radius: 50%;
   background-color: var(--blue-color);
+  color: var(--white-color);
 }
+
 .icon:hover,
 .icon:focus {
   fill: var(--white-color);
@@ -410,12 +420,12 @@ footer {
   padding: 0;
   border-width: 1px;
   border-style: solid;
-  border-color: #afb1b8;
+  border-color: var(--lightgrey-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
 
-  color: #afb1b8;
+  color: var(--lightgrey-color);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -425,6 +435,11 @@ footer {
 
 .icon-footer-container {
   min-width: 206px;
+  margin-right: 650px;
+}
+
+.address {
+  margin-right: 70px;
 }
 
 .footer-header {
@@ -471,4 +486,5 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+  align-items: baseline;
 }
